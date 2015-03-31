@@ -1,0 +1,20 @@
+h1 {
+	color: white;
+	background-color: lightslategray;
+	text-align: center;
+	border-radius: 12px;font-weight: bold;
+
+}
+h2 {
+	color: darkgray;
+	text-align: center;
+}
+
+.notes {
+	padding-left:20px;
+	padding-right: 20px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background-color: #DCDCDC;
+	border-radius: 5px;
+}

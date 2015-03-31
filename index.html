@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+        <title>Udacity, Introduction to Programming - Nanodegree</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div>
+            <h1>Udacity, Introduction to Programming - Nanodegree.</h1>
+            <h2>Stage 1, Work session 1 - HTML and Tags</h2>
+            <div class="notes">
+                <p>Web pages are text documents created using a text editor using a special language called <a href="http://www.w3schools.com"><b>HTML</b></a>. <em>Browser</em> software on your PC is able to display these pages as intended by interpreting the words and codes within the text document after downloading them over the internet from a <em>server</em> where the pages are stored. There are a huge number of servers and web pages around the world and these together comprise the <em>"world wide web"</em>.</p>
+                <p>Pages of HTML comprise two main sections, the <b>head</b> and the <b>body</b>. The head section contains <em>information</em> about the page such as its title and what <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"><b>CSS</b></a> or <b>Javascript</b> is to be used, whereas the body section contains the <em>content</em> to be displayed.</p>
+                <p>The HTML language comprises <b>elements</b> which contain <em>tags</em> with <em>attributes</em> and <em>text</em>.</p>
+                <p>Some example tags are the anchor tag &lt;a&gt;, the div tag &lt;div&gt; and the bold tag &lt;b&gt;.</p>
+                <p>Tags can be inline or block, inline are used just for text whereas block tags create an invisible box around the text which can be resized and have other properties assigned to it.</P>
+                <p>Special text editing software exists that make writing HTML and other programming languages easier by pre-empting the words you are typing and displaying the code you have written in special colours and formatting that make it easier to read and understand. <em>Sublime Text</em> is a good example of such a text editor.</p>
+            </div>
+            <h2>Stage 1, Work session 2 - Document Object Model (DOM)</h2>
+            <div class="notes">
+                <p>The <em>structure</em> of an HTML webpage is stored in the <a href="http://www.w3.org/DOM/"><b>Document Object Model (DOM)</b></a> and is comprised of all the <em>elements</em> that exist in the HTML page. You can use the developer tools in a browser such as <a href="http://www.google.com/chrome/"><b>Google Chrome</b></a> to see the structure of a web page in action and make changes to see what each does. This can be a great way of learning. Also it can be very educational to actually draw the structure of a web page diagrammatically with a pencil and paper like in the example below.</P>
+                <img style="margin-left: 100px" src="/images/example_structure.png" alt="example" height="142" width="242" />
+                <p>HTML controls the <em>structure</em> of a web page, but the <em>style</em> that you see is controlled by <b>CSS</b>. Applying a <em>'class'</em> to a div tag can be useful to give it a name or tell it what <em>style</em> to use.</p>
+                <p>All web pages are comprised of a number of boxes, some of the boxes can be inside other boxes.</p>
+            </div>
+            <h2>Stage 1, Work session 3 - CSS</h2>
+            <div class="notes">
+                <p><b>CSS</b> determines the presentation of HTML documents and is used to change the appearance of the web page without the need to change the content or structure.</p>
+                <p>One can define the content characteristics of parts of the web page either by HTML <em>element selectors</em> such as h1, p etc or by <em><b>class</b> selectors</em> that you can define yourself.</P>
+                <p>CSS text should be placed in a separate file with a file extension of .css. In your HTML you tell the page what css file to use and where it is stored.</p>
+                <p>Use of CSS and careful consideration to the structure of your HTML code leads to clean and easy to understand web pages and avoids the need to repeat unnecessary bits of  code.</p>
+                <p>HTML and CSS can be checked by using online validation tools such as can be found here for <a href="http://validator.w3.org/#validate_by_input">HTML</a> and here for <a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS</a> at W3C.</p>
+            </div>
+            <h2>Stage 2, Work session 1 - Variables and Strings</h2>
+            <div class="notes">
+                <p>When writing computer programs, values can be assigned to a location which is called <b>assignment</b>. The assignment points to a location where the value is stored. You assign a value to a <b>variable</b> as follows, a=4. Variables can have a different value assigned to them which replaces the prior value stored at the location. Variables can have operations performed on them such as addition and multiplication. For example, using the assignment of the variable a above the following would happen,<br>print 5 * a<br> (would ouput 20).</p>
+                <p>The value assigned to a variable can also be a <b>string</b>. Strings can also have operations performed on them, for example a = "mike", print 4 * a (would output mikemikemikemike). Strings can be sliced i.e. taking a part of the string in order to perform some other operation on it.</p>
+                <p>Strings are sequences of characters and as such can be iterated through. Strings (along with Tuples) are <em>immutable</em>, meaning that their values cannot be changed within the assignment but a new string can be created. Unlike <b>Lists</b> and <b>Dictionaries</b> which allow element substitution within the existing construct.</P>
+            </div>
+            <h2>Stage 2, Work session 2 - Using and Defining Functions</h2>
+            <div class="notes">
+                <p>You can use a method called <em>find</em> in order to find a character or string within a string. It returns the position within the string that the search string or character was found. If it was not found, -1 is returned.</p>
+                <p> You can <em>define</em> your own <b>functions</b> that can be called from within your code. The function executes and then returns to your code which then continues from where it left off. Functions can return a value to be used in the future processing of your code. An example of a function is below,</P>
+                <p>def sum(a,b):<br>a = a + b<br>    return a<br>which could be called as follows,<br>print sum (2, 2)<br>the output being 4, obviously!</p>
+                <p><em>Parameters</em> are usually passed in to a function to be used in some way. Different values may be passed in an <em>iterative</em> process such as working through a list doing the same thing to each element. A function can call another function, and so on. This helps reduce repetition in your code.</p>
+                <p>Functions can return a value to the main code to be evaluated further. If there is no return, no value is returned to the code that called the function.
+                </p>
+                <p>There are many <em>system</em> functions available within Python that can be used.</p>
+            </div>
+            <h2>Stage 2, Work session 3 - Decisions and Repetition</h2>
+            <div class="notes">
+                <p>In order to control the flow of your code you need to be able to make <em>decisions</em> and do one thing for one outcome and another otherwise.</p>
+                <p>The <b>'if'</b> statement allows you to perform comparisons resulting in an 'if this is so, then do this, otherwise do something else' scenario. The outcome of a comparison is always either 'True' or 'False' e.g. if comparison is true/correct, then return 'True'. If it is not true/incorrect, then return 'False'. </p>
+                <p>It is also possible to create 'if' statements that contain an extra step <b>'else'</b> that says if the condition is not met then do something else, surprisingly.</p>
+                <p>If statements can be <em>nested</em> in order to perform more complex comparisons.</P>
+            </div>
+            <h2>Stage 2, Work session 4 - Lists and For loops</h2>
+            <div class="notes">
+                <p><b>Loops</b> can be created to cycle through the values contained in some kind of list. Different kinds of loops exist for different scenarios. For example, <b>'while'</b> loops will continue to execute while a condition remains 'True', whereas a <b>'for'</b> loop will execute a certain number of times based on some criteria, such as counting through the actual number of values in a list.</p>
+                <p><b>Lists</b> can contain all different types of data and can even contain other lists. It is a common requirement in coding to need to cycle through all the values in a list or all the values that meet a certain criteria.</p>
+                <p>It is also common to create a 'list' from a list in order to prepare the values to be processed further because they meet the reason or purpose we are looking for, such as all words beginning with 'U' for example.</P>
+                <p><b>The use of 'for'</b> loops can be very useful for going through each value in a list. The structure of a 'for' loop can take the form as follows. For x(name) in list(List): Do something over and over again until there are no more elements and then branch off to the next instruction to be followed.</p>
+                <p>Lists are mutable and Python contains list operations that are built in methods which are very useful. Examples would be .append which as it implies appends an element to the list, or .sort which (again as its name suggests) sorts the elements in a list in to an order such as ascending.
+            </div>            
+        </div>
+        <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+        <img style="border:0;width:88px;height:31px"
+            src="http://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" />
+    </a>
+</p>
+    </body>
+</html>
